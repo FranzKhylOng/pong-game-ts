@@ -1,12 +1,13 @@
 import kaplay, { KAPLAYCtx } from "kaplay";
+import { gameWidth, gameHeight } from "./config";
 
 class Game {
   private game: KAPLAYCtx;
 
   constructor() {
     this.game = kaplay({
-      width: 1920,
-      height: 1080,
+      width: gameWidth,
+      height: gameHeight,
       letterbox: true, //scale the canvas to fit the window while maintaining aspect ratio
       background: [0, 0, 0],
       global: false,
