@@ -27,6 +27,12 @@ class Game {
         player2Down: {
           keyboard: ["down"],
         },
+        one: {
+          keyboard: ["1"],
+        },
+        two: {
+          keyboard: ["2"],
+        },
       },
       debugKey: "d",
       debug: true,

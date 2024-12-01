@@ -9,13 +9,17 @@ export function mainMenu() {
 
   game.add([
     game.text("(1) One Player", { font: "mania", size: 64 }),
-    game.pos(game.center().x, 450),
+    game.pos(game.center().x, 500),
     game.anchor("center"),
   ]);
 
   game.add([
     game.text("(2) Two Players", { font: "mania", size: 64 }),
-    game.pos(game.center().x, 550),
+    game.pos(game.center().x, 600),
     game.anchor("center"),
   ]);
+
+  game.onButtonPress("one", () => {
+    game.go("onePlayer");
+  });
 }
